@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="MyMap.MainFrmController">
+  <children>
+    <SplitPane dividerPositions="0.33277591973244147" focusTraversable="true" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <TextField fx:id="txt1" layoutY="34.0" prefHeight="29.0" prefWidth="400.0" AnchorPane.leftAnchor="226.0" AnchorPane.rightAnchor="172.0" />
+            <VBox layoutY="34.0" prefHeight="103.0" prefWidth="100.0" spacing="15.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="655.0">
+              <children>
+                <Button fx:id="btn1" mnemonicParsing="false" onAction="#btn1fired" prefHeight="29.0" prefWidth="93.0" text="Тест1" />
+                <Button fx:id="btn2" mnemonicParsing="false" onAction="#btn2fired" prefHeight="29.0" prefWidth="93.0" text="Тест2" />
+              </children>
+            </VBox>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <WebView fx:id="ww1" prefHeight="296.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+  <stylesheets>
+    <URL value="@mainfrm.css" />
+  </stylesheets>
+</AnchorPane>
